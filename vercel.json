@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://biocce-site-h4erpd660-biocce.vercel.app/$1",
+      "permanent": true
+    }
+  ]
+}
