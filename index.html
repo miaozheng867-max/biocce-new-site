@@ -1,450 +1,304 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="5ifk2LDXq8DkDsnkleJ37hU1V19t2pzN2OCx55eUhGY" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BIOCCE manufactures industrial floor scrubbers, ride-on scrubbers, industrial vacuums and pressure washers. Factory-direct pricing, OEM/ODM, CE certified, 10+ years export to 50+ countries.">
-    <title>BIOCCE | Professional Floor Scrubber and Cleaning Equipment Manufacturer</title>
-    <link rel="canonical" href="https://www.biocce.com/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23165DFF'/><text x='16' y='22' font-size='16' font-weight='800' fill='white' text-anchor='middle' font-family='Arial'>BC</text></svg>">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGEL35HFSP"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RGEL35HFSP');</script>
-    <style>
-    /* ===== CSS VARIABLES ===== */
-    :root {
-        --primary: #1a2332;
-        --accent: #165DFF;
-        --accent-hover: #0e4fd8;
-        --bg: #f5f6f8;
-        --text: #222222;
-        --text-light: #5a6378;
-        --border: #e2e5ea;
-        --radius: 6px;
-        --font: 'Roboto',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
-        --mw: 1120px;
-    }
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.6}
-    a{color:var(--accent);text-decoration:none;transition:color .2s}
-    a:hover{color:var(--accent-hover)}
-    img{max-width:100%;height:auto;display:block}
-    .container{max-width:var(--mw);margin:0 auto;padding:0 24px}
-    .section{padding:64px 0}
-    .section-compact{padding:48px 0}
-    .bg-white{background:#fff}
-    .bg-light{background:#f5f6f8}
-    .section-title{font-size:1.6rem;font-weight:700;color:var(--primary);margin-bottom:8px;text-align:center}
-    .section-title .accent{color:var(--accent)}
-    .section-subtitle{font-size:.92rem;color:var(--text-light);text-align:center;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto}
-
-    /* ===== HEADER ===== */
-    .site-header{background:var(--primary);color:#fff;position:sticky;top:0;z-index:1000}
-    .header-inner{max-width:var(--mw);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px}
-    .logo{display:flex;align-items:center;gap:10px;color:#fff!important;flex-shrink:0}
-    .logo-icon{width:36px;height:36px;background:var(--accent);border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff}
-    .logo-name{font-size:17px;font-weight:700;letter-spacing:.5px}
-    .logo-name .accent{color:var(--accent)}
-    .logo-sub{font-size:9px;color:rgba(255,255,255,.45);letter-spacing:2px;text-transform:uppercase}
-    .nav{display:flex;gap:0}
-    .nav a{color:rgba(255,255,255,.65);font-size:12.5px;font-weight:500;padding:8px 14px;transition:all .2s;white-space:nowrap}
-    .nav a:hover,.nav a.active{color:#fff;background:rgba(255,255,255,.06);border-radius:4px}
-    .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:4px}
-    .nav-toggle span{display:block;width:22px;height:2px;background:#fff;border-radius:1px}
-    @media(max-width:900px){
-        .nav-toggle{display:flex}
-        .nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--primary);flex-direction:column;padding:12px 24px 20px}
-        .nav.open{display:flex}
-        .nav a{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:14px}
-    }
-
-    /* ===== HERO ===== */
-    #hero{background:linear-gradient(135deg,var(--primary) 0%,#0d1f3c 100%);padding:88px 0 80px;color:#fff;text-align:center}
-    #hero h1{font-size:2.6rem;font-weight:700;line-height:1.22;margin-bottom:16px}
-    #hero h1 .accent{color:var(--accent)}
-    #hero p{font-size:1.05rem;color:rgba(255,255,255,.6);line-height:1.7;max-width:680px;margin:0 auto 28px}
-    .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-
-    /* ===== BUTTONS ===== */
-    .btn{display:inline-block;padding:12px 28px;font-size:13px;font-weight:600;background:var(--accent);color:#fff;border-radius:var(--radius);letter-spacing:.3px;transition:all .2s;border:1px solid var(--accent);cursor:pointer}
-    .btn:hover{background:var(--accent-hover);border-color:var(--accent-hover);color:#fff}
-    .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
-    .btn-outline:hover{border-color:var(--accent);background:rgba(22,93,255,.1)}
-    .btn-sm{padding:8px 20px;font-size:11px}
-
-    /* ===== FEATURES GRID ===== */
-    .features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:960px;margin:0 auto;align-items:stretch}
-    .feature-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:32px 20px;text-align:center;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:10px}
-    .feature-card:hover{box-shadow:0 8px 30px rgba(0,0,0,.08);transform:translateY(-2px)}
-    .feature-icon{font-size:2.2rem;flex-shrink:0}
-    .feature-card h3{font-size:.85rem;font-weight:700;color:var(--primary);margin:0}
-    .feature-card p{font-size:.8rem;color:var(--text-light);line-height:1.6;margin:0;flex:1;display:flex;align-items:center}
-    @media(max-width:768px){.features-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:480px){.features-grid{grid-template-columns:1fr}}
-
-    /* ===== PRODUCTS GRID ===== */
-    .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto;align-items:stretch}
-    .prod-card{background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:all .3s;display:flex;flex-direction:column;box-shadow:0 2px 6px rgba(0,0,0,.04)}
-    .prod-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);border-color:var(--accent);transform:translateY(-3px)}
-    .prod-img{height:220px;background:#f0f2f5;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#b0b8c5;overflow:hidden}
-    .prod-img img{width:100%;height:100%;object-fit:cover;display:block}
-    .prod-body{padding:20px;flex:1;display:flex;flex-direction:column}
-    .prod-tag{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:var(--accent);font-weight:600;margin-bottom:6px}
-    .prod-body h3{font-size:.95rem;font-weight:700;color:var(--primary);margin:0 0 4px}
-    .prod-model{font-size:.78rem;color:var(--text-light);margin-bottom:8px}
-    .prod-desc{font-size:.82rem;color:var(--text-light);line-height:1.6;margin-bottom:12px;flex:1}
-    .prod-more{text-align:center;margin-top:28px}
-    @media(max-width:900px){.prod-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:480px){.prod-grid{grid-template-columns:1fr}}
-
-    /* ===== FACTORY SECTION ===== */
-    #factory-strength{max-width:960px;margin:0 auto}
-    #factory-strength .fs-row{display:flex;gap:44px;align-items:center;justify-content:center}
-    #factory-strength .fs-text{flex:1;max-width:480px;color:var(--text-light);font-size:.9rem;line-height:1.8}
-    #factory-strength .fs-text p{margin-bottom:12px}
-    #factory-strength .fs-text p:last-child{margin-bottom:0}
-    #factory-strength .fs-img{flex-shrink:0;width:380px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
-    #factory-strength .fs-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:640px;margin:32px auto 0}
-    #factory-strength .fs-stat{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:22px 12px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-    #factory-strength .fs-num{font-size:1.5rem;font-weight:800;color:var(--accent)}
-    #factory-strength .fs-lbl{font-size:.72rem;color:var(--text-light);margin-top:4px;text-transform:uppercase;letter-spacing:1px}
-    @media(max-width:768px){
-        #factory-strength .fs-row{flex-direction:column}
-        #factory-strength .fs-img{width:100%;max-width:380px}
-        #factory-strength .fs-stats{grid-template-columns:1fr 1fr}
-    }
-
-    /* ===== CASE STUDIES ===== */
-    #case-studies .cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto;align-items:stretch}
-    #case-studies .cs-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-    #case-studies .cs-img{height:180px;overflow:hidden}
-    #case-studies .cs-img img{width:100%;height:100%;object-fit:cover;display:block}
-    #case-studies .cs-body{padding:20px;flex:1;display:flex;flex-direction:column}
-    #case-studies .cs-country{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:var(--accent);font-weight:600;margin-bottom:6px}
-    #case-studies .cs-body h3{font-size:.9rem;font-weight:700;color:var(--primary);margin:0 0 8px}
-    #case-studies .cs-body p{font-size:.82rem;color:var(--text-light);line-height:1.6;flex:1;margin:0}
-    .cs-more{text-align:center;margin-top:28px}
-    @media(max-width:768px){#case-studies .cs-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:480px){#case-studies .cs-grid{grid-template-columns:1fr}}
-
-    /* ===== OEM STRIP ===== */
-    #oem-strip .oem-box{background:var(--primary);border-radius:var(--radius);padding:36px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:960px;margin:0 auto;color:#fff}
-    #oem-strip .oem-box h3{font-size:1.1rem;font-weight:700;margin-bottom:4px}
-    #oem-strip .oem-box p{font-size:.85rem;color:rgba(255,255,255,.55)}
-    #oem-strip .oem-box .btn{flex-shrink:0}
-    @media(max-width:640px){#oem-strip .oem-box{flex-direction:column;text-align:center}}
-
-    /* ===== CTA ===== */
-    #cta{background:var(--primary);padding:56px 0;text-align:center;color:#fff}
-    #cta h2{font-size:1.7rem;font-weight:700;margin-bottom:10px}
-    #cta h2 .accent{color:var(--accent)}
-    #cta p{color:rgba(255,255,255,.55);font-size:.92rem;max-width:600px;margin:0 auto 24px}
-    #cta .btn-outline{color:#fff;border-color:rgba(255,255,255,.3)}
-    #cta .btn-outline:hover{border-color:var(--accent);background:rgba(22,93,255,.1)}
-
-    /* ===== FOOTER ===== */
-    .site-footer{background:#0d1117;color:rgba(255,255,255,.45);padding:48px 0 24px;font-size:.82rem}
-    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:32px}
-    .footer-col h4{color:#fff;font-size:.85rem;font-weight:700;margin-bottom:14px;letter-spacing:.5px}
-    .footer-col a{display:block;color:rgba(255,255,255,.45);margin-bottom:6px;font-size:.82rem}
-    .footer-col a:hover{color:var(--accent)}
-    .footer-col p{font-size:.82rem;line-height:1.6}
-    .footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:20px;text-align:center;font-size:.75rem}
-    @media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:24px}}
-    @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
-
-    /* WhatsApp float */
-.prod-btn-wrap{text-align:right;margin-top:auto}
-    .wa-float{position:fixed;bottom:24px;right:24px;z-index:999;width:52px;height:52px;background:#25D366;border-radius:50%;box-shadow:0 4px 16px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center}
-    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Products — BIOCCE</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="product-images.js"></script>
+<script src="scene-images.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;color:#1A1A1A;background:#FAFAF8;line-height:1.5}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;border-bottom:1px solid #E8E8E8}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 32px;height:72px}
+.nav-left{display:flex;align-items:center;gap:12px}
+.logo-mark{width:36px;height:36px;background:#1A3A4A;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.85rem;font-weight:700}
+.logo-text{font-size:1.15rem;font-weight:700;color:#1A1A1A;letter-spacing:.5px}
+.nav-right{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-right a{font-size:.85rem;font-weight:500;color:#666;letter-spacing:.3px}
+.nav-right a:hover,.nav-right a.active{color:#1A3A4A}
+.nav-cta{display:inline-block;padding:10px 24px;background:#1A3A4A;color:#fff!important;border-radius:6px;font-size:.8rem!important;font-weight:600!important}
+.nav-cta:hover{background:#2D5A6E!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{width:22px;height:2px;background:#1A1A1A;border-radius:2px;transition:.3s}
+.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
-<script type="application/ld+json">{"foundingDate":"2015","@type":"Organization","url":"https://www.biocce.com","contactPoint":***@biocce.com","contactType":"sales","@type":"ContactPoint"},"name":"BIOCCE Supply Chain (Shanghai) Co., Ltd.","description":"BIOCCE manufactures industrial floor scrubbers, ride-on scrubbers, industrial vacuums and pressure washers. Factory-direct pricing, OEM/ODM, CE certified, 10+ years export to 50+ countries.","@context":"https://schema.org","address":***@type":"PostalAddress","addressCountry":"CN"}}</script>
-</head>
-<body>
-
-<!-- ===== HEADER ===== -->
-<header class="site-header">
-    <div class="header-inner">
-        <a href="/" class="logo">
-            <div class="logo-icon">BC</div>
-            <div class="logo-text">
-                <div class="logo-name">BIO<span class="accent">CCE</span></div>
-                <div class="logo-sub">Professional Cleaning Equipment</div>
-            </div>
-        </a>
-        <nav class="nav" id="main-nav">
-            <a href="/">Home</a>
-            <a href="/about.html">About BIOCCE</a>
-            <a href="/products.html">Products</a>
-            <a href="/oem.html">OEM &amp; Customization</a>
-            <a href="/cases.html">Cases &amp; Projects</a>
-            <a href="/certificates.html">Certificates</a>
-            <a href="/faq.html">FAQ</a>
-            <a href="/contact.html">Contact Us</a>
-        </nav>
-        <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-</header>
-
-<main>
-
-<!-- ===== HERO ===== -->
-<section id="hero">
-    <div class="container">
-        <h1>Professional Cleaning Equipment <span class="accent">Manufacturer</span></h1>
-        <p>Factory-Direct Industrial Floor Scrubbers, Industrial Vacuums &amp; Pressure Washers<br>OEM &amp; Custom Solutions for Global Distributors</p>
-        <div class="hero-btns">
-            <a href="/contact.html" class="btn">Request a Quote &rarr;</a>
-            <a href="/products.html" class="btn btn-outline">View Products &rarr;</a>
-        </div>
-    </div>
-</section>
-
-<!-- ===== CORE ADVANTAGES ===== -->
-<section id="core-advantages" class="section bg-white">
-    <div class="container">
-        <h2 class="section-title">Our <span class="accent">Core Advantages</span></h2>
-        <p class="section-subtitle">Why global distributors choose BIOCCE as their manufacturing partner</p>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">🏭</div>
-                <h3>China Quality Guaranteed</h3>
-                <p>All machines manufactured under strict QC. CE, ISO certified. Tested before every shipment.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📦</div>
-                <h3>10+ Years Factory Direct</h3>
-                <p>Direct manufacturer pricing, no middlemen. Complete export documentation support.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">⚙️</div>
-                <h3>Full OEM &amp; ODM Service</h3>
-                <p>Custom colors (RAL), branding, packaging, specifications. Your brand, our expertise.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🌐</div>
-                <h3>Global After-Sales Support</h3>
-                <p>Technical documentation, spare parts availability, responsive service in 50+ countries.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== FLOOR SCRUBBERS ===== -->
-<section id="floor-scrubbers" class="section bg-light">
-    <div class="container">
-        <h2 class="section-title">Floor <span class="accent">Scrubbers</span></h2>
-        <p class="section-subtitle">Professional floor scrubbers for every application — from compact walk-behind to heavy-duty ride-on</p>
-        <div class="prod-grid">
-            <div class="prod-card">
-                <div class="prod-img"><img src="/images/product-bc500.jpg" alt="BC500 Walk-Behind Floor Scrubber"></div>
-                <div class="prod-body">
-                    <span class="prod-tag">Walk-Behind</span>
-                    <h3>BC500 Walk-Behind Scrubber</h3>
-                    <div class="prod-model">500mm &middot; 100Ah Li-ion &middot; 120kg</div>
-                    <p class="prod-desc">Compact model for small to medium facilities. 3–4h runtime. Low noise operation.</p>
-                    <div class="prod-btn-wrap"><a href="/product-bc500.html" class="btn btn-sm">View Details &rarr;</a></div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <div class="prod-img"><img src="/images/product-bc600.png" alt="BC600 Ride-On Floor Scrubber"></div>
-                <div class="prod-body">
-                    <span class="prod-tag">Ride-On</span>
-                    <h3>BC600 Ride-On Scrubber</h3>
-                    <div class="prod-model">600mm &middot; 80L tank &middot; 280kg</div>
-                    <p class="prod-desc">Mid-size ride-on for warehouses and retail. Stable, ergonomic, easy to operate.</p>
-                    <div class="prod-btn-wrap"><a href="/product-bc600.html" class="btn btn-sm">View Details &rarr;</a></div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <div class="prod-img"><img src="/images/product-bc1000.png" alt="BC1000 Ride-On Floor Scrubber"></div>
-                <div class="prod-body">
-                    <span class="prod-tag">Ride-On</span>
-                    <h3>BC1000 Ride-On Scrubber</h3>
-                    <div class="prod-model">1000mm &middot; 120L &middot; 150Ah Li-ion</div>
-                    <p class="prod-desc">Large capacity for industrial use. Dual-brush system, 4–5h runtime.</p>
-                    <div class="prod-btn-wrap"><a href="/product-bc1000.html" class="btn btn-sm">View Details &rarr;</a></div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <div class="prod-img"><img src="/images/product-bc1250.png" alt="BC1250 Heavy-Duty Floor Scrubber"></div>
-                <div class="prod-body">
-                    <span class="prod-tag">Heavy-Duty Ride-On</span>
-                    <h3>BC1250 Heavy-Duty Scrubber</h3>
-                    <div class="prod-model">1250mm &middot; 160L &middot; 200Ah Li-ion</div>
-                    <p class="prod-desc">Maximum productivity for large industrial floors. Twin brushes, long runtime.</p>
-                    <div class="prod-btn-wrap"><a href="/product-bc1250.html" class="btn btn-sm">View Details &rarr;</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="prod-more"><a href="/products.html" class="btn">All Products &rarr;</a></div>
-    </div>
-</section>
-
-<!-- ===== FACTORY STRENGTH ===== -->
-<section id="factory-strength" class="section bg-white">
-    <div class="container">
-        <h2 class="section-title">Factory <span class="accent">Strength</span></h2>
-        <p class="section-subtitle">Built on real manufacturing capability</p>
-        <div class="fs-row">
-            <div class="fs-text">
-                <p>BIOCCE operates a dedicated manufacturing facility in Shanghai with modern production lines, professional QC inspection, and experienced engineering team.</p>
-                <p>Every machine undergoes rigorous testing before shipment: motor performance, battery cycle, water leakage, and safety compliance checks.</p>
-                <p>With 10+ years of export experience serving 50+ countries, we understand international quality standards.</p>
-            </div>
-            <div class="fs-img">
-                <img src="/images/factory-1.jpg" alt="BIOCCE factory production line in Shanghai">
-            </div>
-        </div>
-        <div class="fs-stats">
-            <div class="fs-stat"><div class="fs-num">8,000m&sup2;</div><div class="fs-lbl">Facility Area</div></div>
-            <div class="fs-stat"><div class="fs-num">50+</div><div class="fs-lbl">Countries Exported</div></div>
-            <div class="fs-stat"><div class="fs-num">10+</div><div class="fs-lbl">Years Experience</div></div>
-            <div class="fs-stat"><div class="fs-num">CE</div><div class="fs-lbl">Certified Quality</div></div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== GLOBAL CASE STUDIES ===== -->
-<section id="case-studies" class="section bg-white">
-    <div class="container">
-        <h2 class="section-title">Global <span class="accent">Case Studies</span></h2>
-        <p class="section-subtitle">Trusted by cleaning equipment distributors worldwide</p>
-        <div class="cs-grid">
-            <div class="cs-card">
-                <div class="cs-img"><img src="/images/factory-2.jpg" alt="BIOCCE Germany warehouse"></div>
-                <div class="cs-body">
-                    <div class="cs-country">Germany</div>
-                    <h3>Warehouse Floor Cleaning</h3>
-                    <p>BC1000 ride-on scrubber deployed in 15,000m&sup2; logistics center. Reduced cleaning time by 60%.</p>
-                </div>
-            </div>
-            <div class="cs-card">
-                <div class="cs-img"><img src="/images/factory-3.jpg" alt="BIOCCE Russia supermarket"></div>
-                <div class="cs-body">
-                    <div class="cs-country">Russia</div>
-                    <h3>Supermarket Chain</h3>
-                    <p>30+ BC500 scrubbers supplied to a major retail chain across Moscow and St. Petersburg.</p>
-                </div>
-            </div>
-            <div class="cs-card">
-                <div class="cs-img"><img src="/images/factory-1.jpg" alt="BIOCCE UAE hotel"></div>
-                <div class="cs-body">
-                    <div class="cs-country">UAE</div>
-                    <h3>Hotel Housekeeping</h3>
-                    <p>BV30 vacuums and BC500 scrubbers supplied to a 5-star hotel group. Quiet, reliable performance.</p>
-                </div>
-            </div>
-        </div>
-        <div class="cs-more"><a href="/cases.html" class="btn">View All Projects &rarr;</a></div>
-    </div>
-</section>
-
-<!-- ===== OEM STRIP ===== -->
-<section id="oem-strip" class="section-compact bg-light">
-    <div class="container">
-        <div class="oem-box">
-            <div>
-                <h3>Need Custom OEM Solutions?</h3>
-                <p>Your brand, your specifications, our manufacturing expertise. Get started with a free consultation.</p>
-            </div>
-            <a href="/oem.html" class="btn">Explore OEM &rarr;</a>
-        </div>
-    </div>
-</section>
-
-<!-- ===== CTA ===== -->
-<section id="cta">
-    <div class="container">
-        <h2>Ready to Partner with <span class="accent">BIOCCE</span>?</h2>
-        <p>Contact us for quotes, OEM inquiries, or product specifications. We respond within 24 hours.</p>
-        <div class="hero-btns">
-            <a href="/contact.html" class="btn">Request a Quote &rarr;</a>
-            <a href="/cases.html" class="btn btn-outline">View All Projects &rarr;</a>
-        </div>
-    </div>
-</section>
-
-</main>
-
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>BIOCCE</h4>
-                <p>Professional cleaning equipment manufacturer.<br>Biocce Supply Chain (Shanghai) Co., Ltd.</p>
-                <p style="margin-top:8px">&#x1F4CD; Shanghai, China</p>
-                <p>&#x2709;&#xFE0F; <a href="mailto:michael@biocce.com">michael@biocce.com</a></p>
-                <p>&#x1F4DE; +86 21 5107 8500</p>
-                <p>&#x1F4F1; <a href="https://wa.me/8618621559605">WhatsApp: +86 18621559605</a></p>
-            </div>
-            <div class="footer-col">
-                <h4>Products</h4>
-                <a href="/products.html">Floor Scrubbers</a>
-                <a href="/products.html">Industrial Vacuums</a>
-                <a href="/products.html">Pressure Washers</a>
-                <a href="/products.html">Accessories</a>
-            </div>
-            <div class="footer-col">
-                <h4>Company</h4>
-                <a href="/about.html">About BIOCCE</a>
-                <a href="/oem.html">OEM Services</a>
-                <a href="/certificates.html">Certificates</a>
-                <a href="/cases.html">Case Studies</a>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <a href="/faq.html">FAQ</a>
-                <a href="/contact.html">Get a Quote</a>
-                <a href="mailto:michael@biocce.com">Email Us</a>
-                <a href="https://wa.me/8618621559605">WhatsApp</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 BIOCCE (&#x62DC;&#x832C;). All rights reserved. | <a href="/privacy.html" style="color:rgba(255,255,255,.45)">Privacy Policy</a> | Biocce Supply Chain (Shanghai) Co., Ltd.</p>
-        </div>
-    </div>
-</footer>
-
-<!-- WhatsApp Float -->
-<a href="https://wa.me/8618621559605" target="_blank" class="wa-float" aria-label="WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
-    </svg>
-</a>
-
-<script>
-(function(){
-  var t=document.querySelector(".nav-toggle"),n=document.getElementById("main-nav");
-  if(t&&n) t.addEventListener("click",function(){n.classList.toggle("open")});
-  var path=window.location.pathname;
-  var links=document.querySelectorAll("#main-nav a");
-  for(var i=0;i<links.length;i++){
-    var href=links[i].getAttribute("href");
-    if(path===href||(href==="/"&&path==="/")){
-      links[i].classList.add("active");
-    }else if(href!=="/"&&path.indexOf(href)===0){
-      links[i].classList.add("active");
-    }
-  }
-})();
-</script>
-<script>
-(function(){
-  var t=document.querySelector(".nav-toggle"),n=document.getElementById("main-nav");
-  if(t&&n)t.addEventListener("click",function(){n.classList.toggle("open")});
-  var p=window.location.pathname;
-  var a=document.querySelectorAll("#main-nav a");
-  for(var i=0;i<a.length;i++){
-    var h=a[i].getAttribute("href");
-    if(p===h||(h==="/"&&p==="/")||(h!=="/"&&p.indexOf(h)===0)){a[i].classList.add("active");}
-  }
-})();
-</script>
-</body>
+.hero{padding-top:72px;background:#fff}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 32px;max-width:1280px;margin:0 auto}
+.hero-text .label{font-size:.75rem;font-weight:600;color:#999;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.hero-text h1{font-size:clamp(2rem,3.5vw,3rem);font-weight:700;color:#1A1A1A;margin-bottom:16px;line-height:1.15}
+.hero-text p{font-size:.95rem;color:#666;line-height:1.6;max-width:480px}
+.hero-image-wrap{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.1)}
+.hero-image-wrap img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}
+.hero-image-wrap .overlay-tag{position:absolute;bottom:16px;left:16px;background:rgba(26,58,74,.88);color:#fff;padding:8px 16px;border-radius:6px;font-size:.75rem;font-weight:600;backdrop-filter:blur(4px)}
+
+.content{max-width:1280px;margin:0 auto;padding:48px 32px 80px;display:grid;grid-template-columns:260px 1fr;gap:40px}
+
+.sidebar{position:sticky;top:120px;align-self:start}
+.sidebar h3{font-size:.8rem;font-weight:600;color:#999;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:24px}
+.sidebar h4{font-size:.85rem;font-weight:600;color:#1A1A1A;margin-bottom:12px}
+.sidebar .fg{margin-bottom:32px}
+.sidebar label{display:flex;align-items:center;gap:10px;padding:8px 0;cursor:pointer;font-size:.85rem;color:#444}
+.sidebar label:hover{color:#1A3A4A}
+.sidebar input[type="checkbox"]{appearance:none;width:18px;height:18px;border:2px solid #CCC;border-radius:3px;cursor:pointer;flex-shrink:0;position:relative}
+.sidebar input[type="checkbox"]:checked{border-color:#1A3A4A;background:#1A3A4A}
+.sidebar input[type="checkbox"]:checked::after{content:'';position:absolute;top:2px;left:5px;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.sidebar .count{color:#BBB;font-size:.75rem;margin-left:auto}
+.sidebar .btn-clear{background:none;border:none;color:#999;font-size:.8rem;cursor:pointer;padding:4px 0}
+.sidebar .btn-clear:hover{color:#1A3A4A}
+
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.header .count{font-size:.85rem;color:#999}
+.filter-toggle{display:none;align-items:center;gap:8px;padding:10px 20px;background:#fff;border:1px solid #E0E0E0;border-radius:6px;font-size:.85rem;font-weight:500;cursor:pointer;color:#444}
+.filter-toggle:hover{border-color:#1A3A4A}
+.filter-mask{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:99}
+.filter-mask.open{display:block}
+.sidebar .close-f{display:none;background:none;border:none;font-size:1.3rem;cursor:pointer;color:#666;margin-bottom:20px;padding:0}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #ECECEC;cursor:pointer;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.1)}
+.card .img-wrap{aspect-ratio:4/3;background:#F5F5F3;position:relative;display:flex;align-items:center;justify-content:center}
+.card .img-wrap img{max-width:85%;max-height:85%;object-fit:contain;display:block}
+.card .img-wrap .placeholder{color:#CCC;font-size:.75rem}
+.card .info{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1;min-height:135px}
+.card .tag{font-size:.65rem;font-weight:600;color:#999;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;height:14px;line-height:14px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.card h3{font-size:.95rem;font-weight:600;color:#1A1A1A;margin-bottom:2px;line-height:1.2;height:22px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.card .model{font-size:.8rem;color:#C9A84C;font-weight:600;margin-bottom:6px;height:18px;line-height:18px}
+.card .spec{font-size:.78rem;color:#999;margin-bottom:auto;display:flex;gap:6px;flex-wrap:wrap;height:20px;overflow:hidden}
+.card .spec span{background:#F0F2F4;padding:2px 8px;border-radius:4px;height:20px;line-height:16px;white-space:nowrap}
+.card .learn{font-size:.78rem;font-weight:600;color:#1A3A4A;display:inline-flex;align-items:center;gap:4px;margin-top:14px;height:18px}
+.card:hover .learn{gap:8px}
+.card .badge{position:absolute;top:12px;left:12px;background:rgba(26,58,74,.85);color:#fff;font-size:.65rem;font-weight:600;padding:4px 10px;border-radius:4px;backdrop-filter:blur(4px);z-index:2}
+
+.pages{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:32px;padding-top:24px;border-top:1px solid #ECECEC}
+.pg-btn{padding:8px 14px;border:1px solid #D0D0D0;border-radius:6px;background:#fff;color:#666;font-size:.8rem;font-weight:500;cursor:pointer;font-family:Inter,sans-serif}
+.pg-btn:hover{background:#F5F5F3;border-color:#1A3A4A;color:#1A3A4A}
+.pg-btn.on{background:#1A3A4A;border-color:#1A3A4A;color:#fff}
+.pg-btn:disabled{opacity:.4;cursor:default}
+
+.caps{max-width:1280px;margin:0 auto;padding:0 32px 80px}
+.caps h2{font-size:1.1rem;font-weight:600;color:#1A3A4A;margin-bottom:28px;padding-bottom:10px;border-bottom:2px solid #1A3A4A;display:inline-block}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cap-card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #ECECEC}
+.cap-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.06)}
+.cap-card .img-area{aspect-ratio:16/10;overflow:hidden}
+.cap-card .img-area img{width:100%;height:100%;object-fit:cover}
+.cap-card .body{padding:20px 24px 24px}
+.cap-card .body .icon{width:36px;height:36px;background:linear-gradient(135deg,#1A3A4A,#2D5A6E);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#C9A84C;font-size:.8rem;font-weight:700;margin-bottom:12px}
+.cap-card .body h3{font-size:.95rem;font-weight:600;color:#1A1A1A;margin-bottom:6px}
+.cap-card .body p{font-size:.82rem;color:#666;line-height:1.6}
+
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:32px;padding-top:56px;padding-bottom:56px}
+  .hero-text p{max-width:100%}
+  .content{grid-template-columns:1fr;padding-top:32px}
+  .sidebar{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:100;padding:32px;overflow-y:auto}
+  .sidebar.open{display:block}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .filter-toggle{display:inline-flex!important}
+  .cap-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .nav-right{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:#fff;flex-direction:column;justify-content:center;gap:24px;padding:40px;box-shadow:-4px 0 20px rgba(0,0,0,.08);transition:right .3s;z-index:999}
+  .nav-right.open{right:0}
+  .hamburger{display:flex;z-index:1001}
+  .grid{grid-template-columns:1fr}
+  .cap-grid{grid-template-columns:1fr}
+  .hero-inner{padding:40px 20px}
+  .content{padding:32px 20px 60px}
+  .caps{padding:0 20px 48px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">
+      <div class="logo-mark">BC</div>
+      <span class="logo-text">BIOCCE</span>
+    </div>
+    <ul class="nav-right" id="navR">
+      <li><a href="/">Home</a></li>
+      <li><a href="#" class="active">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Insights</a></li>
+      <li><a href="#" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="ham">&nbsp;</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="label">PRODUCT RANGE</p>
+      <h1>All products</h1>
+      <p>Professional floor scrubbers, sweepers, and accessories engineered for industrial performance.</p>
+    </div>
+    <div class="hero-image-wrap" id="heroImg"></div>
+  </div>
+</section>
+
+<section class="content">
+  <aside class="sidebar" id="sidebar">
+    <button class="close-f" id="closeF">&times;</button>
+    <h3>Filters</h3>
+    <div class="fg">
+      <h4>Category</h4>
+      <label><input type="checkbox" value="scrubber" checked><span>Floor Scrubber</span><span class="count" id="c0">0</span></label>
+      <label><input type="checkbox" value="vacuum" checked><span>Industrial Vacuum</span><span class="count" id="c1">0</span></label>
+      <label><input type="checkbox" value="pw" checked><span>Pressure Washer</span><span class="count" id="c2">0</span></label>
+      <label><input type="checkbox" value="wipes" checked><span>Industrial Wipes</span><span class="count" id="c3">0</span></label>
+    </div>
+    <button class="btn-clear" onclick="clearF()">Clear all filters</button>
+  </aside>
+  <div class="filter-mask" id="mask"></div>
+
+  <div>
+    <div class="header">
+      <span class="count" id="total">0 products</span>
+      <button class="filter-toggle" id="filterBtn">&#9776; Filters</button>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="pages" id="pages"></div>
+  </div>
+</section>
+
+<section class="caps">
+  <h2>Our Capabilities</h2>
+  <div class="cap-grid" id="caps"></div>
+</section>
+
+<script>
+var PS = 6, pg = 1;
+var prods = [
+  {i:"BC1250",n:"Ride-On Floor Scrubber BC1250",c:"scrubber",t:"RIDE-ON SCRUBBER",s:["1100mm","255L Tank","6600m2/h"],k:"bc1250",b:"FLAGSHIP"},
+  {i:"BC1000",n:"Ride-On Floor Scrubber BC1000",c:"scrubber",t:"RIDE-ON SCRUBBER",s:["1000mm","175L Tank","6000m2/h"],k:"bc1000",b:"LITHIUM"},
+  {i:"BC600",n:"Compact Ride-On Scrubber BC600",c:"scrubber",t:"COMPACT RIDE-ON",s:["560mm","80L Tank","3360m2/h"],k:"bc600",b:"COMPACT"},
+  {i:"BC500",n:"Walk-Behind Floor Scrubber BC500",c:"scrubber",t:"WALK-BEHIND",s:["500mm","55L Tank","2350m2/h"],k:"bc500",b:"WALK-BEHIND"},
+  {i:"BC-V1",n:"Industrial Vacuum 100L",c:"vacuum",t:"VACUUM CLEANER",s:["100L","2000W"],k:"",b:""},
+  {i:"BC-V2",n:"Industrial Vacuum 50L",c:"vacuum",t:"VACUUM CLEANER",s:["50L","1500W"],k:"",b:""},
+  {i:"BC-P1",n:"Electric Pressure Washer",c:"pw",t:"PRESSURE WASHER",s:["200bar","2000W"],k:"",b:""},
+  {i:"BC-P2",n:"Petrol Pressure Washer",c:"pw",t:"PRESSURE WASHER",s:["300bar","7HP"],k:"",b:""},
+  {i:"BC-W1",n:"Industrial Wiper Rolls",c:"wipes",t:"INDUSTRIAL WIPES",s:["35x40cm","500 Sheets"],k:"",b:""},
+  {i:"BC-W2",n:"Heavy-Duty Wipers",c:"wipes",t:"INDUSTRIAL WIPES",s:["40x50cm","250 Sheets"],k:"",b:""}
+];
+
+function render(arr) {
+  var tp = Math.max(1,Math.ceil(arr.length/PS));
+  if (pg>tp) pg=tp;
+  var st=(pg-1)*PS, items=arr.slice(st,st+PS);
+  var h="";
+  for (var i=0;i<items.length;i++) {
+    var p=items[i];
+    var imgSrc = (typeof PRODUCT_IMAGES!=='undefined' && PRODUCT_IMAGES[p.k]) ? PRODUCT_IMAGES[p.k] : "";
+    var nn = p.n.replace(/\sBC\d+$/,"");
+    var badge = p.b ? '<span class="badge">'+p.b+'</span>' : "";
+    var img = imgSrc ? '<img src="'+imgSrc+'" alt="'+p.n+'" loading="lazy">' : '<div class="placeholder">Image</div>';
+    var sp = "";
+    for (var j=0;j<p.s.length;j++) sp += '<span>'+p.s[j]+'</span>';
+    h += '<div class="card" onclick="location.href=\'product-'+p.i+'.html\'">';
+    h += '<div class="img-wrap">'+badge+img+'</div>';
+    h += '<div class="info">';
+    h += '<div class="tag">'+p.t+'</div>';
+    h += '<h3>'+nn+'</h3>';
+    h += '<div class="model">'+p.i+'</div>';
+    h += '<div class="spec">'+sp+'</div>';
+    h += '<span class="learn">View Details &rarr;</span>';
+    h += '</div></div>';
+  }
+  document.getElementById("grid").innerHTML = h;
+  document.getElementById("total").innerHTML = arr.length+" product"+(arr.length!==1?"s":"");
+  // pagination
+  var ph = "";
+  ph += '<button class="pg-btn" onclick="go('+(pg-1)+')"'+(pg<=1?' disabled':'')+'>&lsaquo; Prev</button>';
+  for (var i=1;i<=tp;i++) ph += '<button class="pg-btn'+(i===pg?' on':'')+'" onclick="go('+i+')">'+i+'</button>';
+  ph += '<button class="pg-btn" onclick="go('+(pg+1)+')"'+(pg>=tp?' disabled':'')+'>Next &rsaquo;</button>';
+  document.getElementById("pages").innerHTML = ph;
+}
+
+function go(p) {
+  var arr = getFiltered();
+  if (p<1 || p>Math.ceil(arr.length/PS)) return;
+  pg=p; render(arr);
+}
+
+function getFiltered() {
+  var checked=[];
+  var cbs = document.querySelectorAll(".sidebar input[type='checkbox']");
+  for (var i=0;i<cbs.length;i++) { if(cbs[i].checked && cbs[i].value) checked.push(cbs[i].value); }
+  if (checked.length===0) return [];
+  return prods.filter(function(p){ return checked.indexOf(p.c)!==-1; });
+}
+
+function filterFn() { pg=1; render(getFiltered()); }
+function clearF() {
+  var cbs = document.querySelectorAll(".sidebar input[type='checkbox']");
+  for (var i=0;i<cbs.length;i++) cbs[i].checked=true;
+  filterFn();
+}
+
+// Attach checkbox events
+var cbs = document.querySelectorAll(".sidebar input[type='checkbox']");
+for (var i=0;i<cbs.length;i++) cbs[i].onchange=filterFn;
+
+// Counts
+function cnt() {
+  var m={}; for (var i=0;i<prods.length;i++) { var c=prods[i].c; m[c]=(m[c]||0)+1; }
+  document.getElementById("c0").innerHTML=m.scrubber||0;
+  document.getElementById("c1").innerHTML=m.vacuum||0;
+  document.getElementById("c2").innerHTML=m.pw||0;
+  document.getElementById("c3").innerHTML=m.wipes||0;
+}
+
+// Scenes
+function loadScenes() {
+  if (typeof SCENE_IMAGES==='undefined') return;
+  document.getElementById("heroImg").innerHTML = '<img src="'+SCENE_IMAGES.gate+'" alt="Factory"><div class="overlay-tag">BIOCCE &middot; Factory</div>';
+  var data = [
+    {img:SCENE_IMAGES.scene1,icon:"01",t:"Precision Manufacturing",d:"State-of-the-art production line in Shanghai, China."},
+    {img:SCENE_IMAGES.scene2,icon:"02",t:"ISO Certified Workshop",d:"ISO 9001 certified workshop ensuring consistent quality."},
+    {img:SCENE_IMAGES.scene3,icon:"03",t:"Global Distribution",d:"Exporting to 50+ countries with reliable logistics."}
+  ];
+  var h="";
+  for (var i=0;i<data.length;i++) {
+    h += '<div class="cap-card"><div class="img-area"><img src="'+data[i].img+'" alt="'+data[i].t+'"></div>';
+    h += '<div class="body"><div class="icon">'+data[i].icon+'</div><h3>'+data[i].t+'</h3><p>'+data[i].d+'</p></div></div>';
+  }
+  document.getElementById("caps").innerHTML = h;
+}
+
+// Mobile events
+document.getElementById("ham").onclick=function(){
+  document.getElementById("navR").classList.toggle("open");
+  this.classList.toggle("active");
+};
+var nls = document.querySelectorAll(".nav-right a");
+for (var i=0;i<nls.length;i++) nls[i].onclick=function(){
+  document.getElementById("navR").classList.remove("open");
+  document.getElementById("ham").classList.remove("active");
+};
+document.getElementById("filterBtn").onclick=function(){
+  document.getElementById("sidebar").classList.add("open");
+  document.getElementById("mask").classList.add("open");
+};
+document.getElementById("closeF").onclick=function(){
+  document.getElementById("sidebar").classList.remove("open");
+  document.getElementById("mask").classList.remove("open");
+};
+document.getElementById("mask").onclick=function(){
+  document.getElementById("sidebar").classList.remove("open");
+  document.getElementById("mask").classList.remove("open");
+};
+
+cnt(); render(getFiltered()); loadScenes();
+</script>
+</body>
 </html>

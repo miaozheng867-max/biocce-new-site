@@ -1,190 +1,333 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="5ifk2LDXq8DkDsnkleJ37hU1V19t2pzN2OCx55eUhGY" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore BIOCCE full range of industrial floor scrubbers BC500, BC600, BC1000, BC1250, industrial vacuums BV20, BV30, and pressure washers BP180, BP300, BP400. Factory-direct.">
-    <link rel="canonical" href="https://www.biocce.com/products.html">
-    <title>Products | BIOCCE Floor Scrubbers, Vacuums and Pressure Washers</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-    .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto;align-items:stretch}
-    .prod-card{background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:all .3s;display:flex;flex-direction:column;box-shadow:0 2px 6px rgba(0,0,0,.04)}
-    .prod-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);border-color:var(--accent);transform:translateY(-3px)}
-    .prod-img{height:200px;background:#f8f8f8;display:flex;align-items:center;justify-content:center;overflow:hidden}
-    .prod-img img{width:100%;height:100%;object-fit:contain;padding:16px;display:block}
-    .prod-body{padding:20px;flex:1;display:flex;flex-direction:column}
-    .prod-tag{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);font-weight:600;margin-bottom:6px}
-    .prod-body h3{font-size:1rem;font-weight:700;color:var(--primary);margin:0 0 4px;line-height:1.3}
-    .prod-body .pmodel{font-size:.78rem;color:var(--text-light);margin-bottom:10px;line-height:1.4}
-    .prod-body .pdesc{font-size:.82rem;color:var(--text-light);line-height:1.6;margin-bottom:16px;flex:1}
-    .prod-body .btn-row{margin-top:auto}
-    .prod-body .btn-row a{display:inline-block;padding:9px 22px;font-size:12px;font-weight:600;background:var(--accent);color:#fff;border-radius:6px;border:1px solid var(--accent);transition:all .2s;text-decoration:none}
-    .prod-body .btn-row a:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
-    @media(max-width:900px){.prod-grid{grid-template-columns:1fr 1fr;gap:20px}}
-    @media(max-width:480px){.prod-grid{grid-template-columns:1fr}}
-    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Products — BIOCCE | Industrial Cleaning Equipment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+<script src="product-images.js"></script>
+<script src="scene-images.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:#1A1A1A;background:#FAFAF8;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.container{max-width:1280px;margin:0 auto;padding:0 32px}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;border-bottom:1px solid #E8E8E8}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:0 32px;height:72px}
+.nav-left{display:flex;align-items:center;gap:12px}
+.logo-mark{width:36px;height:36px;background:#1A3A4A;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.85rem;font-weight:700}
+.logo-text{font-size:1.15rem;font-weight:700;color:#1A1A1A;letter-spacing:.5px}
+.nav-right{display:flex;align-items:center;gap:32px}
+.nav-right a{font-size:.85rem;font-weight:500;color:#666;transition:color .2s;letter-spacing:.3px}
+.nav-right a:hover,.nav-right a.active{color:#1A3A4A}
+.nav-cta{display:inline-block;padding:10px 24px;background:#1A3A4A;color:#fff!important;border-radius:6px;font-size:.8rem!important;font-weight:600!important;transition:background .2s}
+.nav-cta:hover{background:#2D5A6E!important;color:#fff!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{width:22px;height:2px;background:#1A1A1A;border-radius:2px;transition:all .3s}
+.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.hero{padding-top:72px;background:#fff}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 32px;max-width:1280px;margin:0 auto}
+.hero-text .label{font-size:.75rem;font-weight:600;color:#999;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.hero-text h1{font-size:clamp(2rem,3.5vw,3rem);font-weight:700;color:#1A1A1A;margin-bottom:16px;line-height:1.15}
+.hero-text p{font-size:.95rem;color:#666;line-height:1.6;max-width:480px}
+.hero-image-wrap{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.1)}
+.hero-image-wrap img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}
+.hero-image-wrap .overlay-tag{position:absolute;bottom:16px;left:16px;background:rgba(26,58,74,.88);color:#fff;padding:8px 16px;border-radius:6px;font-size:.75rem;font-weight:600;letter-spacing:.5px;backdrop-filter:blur(4px)}
+.page-content{max-width:1280px;margin:0 auto;padding:48px 32px 80px;display:grid;grid-template-columns:260px 1fr;gap:40px}
+.filter-sidebar{position:sticky;top:120px;align-self:start}
+.filter-sidebar h3{font-size:.8rem;font-weight:600;color:#999;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:24px}
+.filter-group{margin-bottom:32px}
+.filter-group h4{font-size:.85rem;font-weight:600;color:#1A1A1A;margin-bottom:12px}
+.filter-group label{display:flex;align-items:center;gap:10px;padding:8px 0;cursor:pointer;font-size:.85rem;color:#444;transition:color .2s}
+.filter-group label:hover{color:#1A3A4A}
+.filter-group input[type="checkbox"]{appearance:none;width:18px;height:18px;border:2px solid #CCC;border-radius:3px;cursor:pointer;transition:all .2s;flex-shrink:0;position:relative}
+.filter-group input[type="checkbox"]:checked{border-color:#1A3A4A;background:#1A3A4A}
+.filter-group input[type="checkbox"]:checked::after{content:'';position:absolute;top:2px;left:5px;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.filter-group .count{color:#BBB;font-size:.75rem;margin-left:auto}
+.filter-actions .btn-clear{background:none;border:none;color:#999;font-size:.8rem;cursor:pointer;padding:4px 0;transition:color .2s}
+.filter-actions .btn-clear:hover{color:#1A3A4A}
+.product-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.product-header .count{font-size:.85rem;color:#999}
+.product-header .sort{display:flex;align-items:center;gap:8px;font-size:.8rem;color:#666}
+.product-header .sort select{border:1px solid #E0E0E0;border-radius:4px;padding:6px 12px;font-size:.8rem;color:#444;font-family:'Inter',system-ui,sans-serif;background:#fff;cursor:pointer}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.product-card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #ECECEC;transition:all .3s;cursor:pointer;display:flex;flex-direction:column}
+.product-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.1);border-color:#D0D0D0}
+.product-card .image-wrap{aspect-ratio:4/3;overflow:hidden;background:#F5F5F3;position:relative;display:flex;align-items:center;justify-content:center}
+.product-card .image-wrap img{max-width:85%;max-height:85%;object-fit:contain;display:block;filter:grayscale(100%) brightness(.85);transition:filter .35s ease,transform .5s ease}
+.product-card:hover .image-wrap img{filter:grayscale(0%) brightness(1.05);transform:scale(1.06)}
+.product-card .info{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1;min-height:135px}
+.product-card .tag{font-size:.65rem;font-weight:600;color:#999;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;height:14px;line-height:14px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.product-card h3{font-size:.95rem;font-weight:600;color:#1A1A1A;margin-bottom:2px;line-height:1.2;height:22px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.product-card .p-model{font-size:.8rem;color:#C9A84C;font-weight:600;margin-bottom:6px;height:18px;line-height:18px}
+.product-card .spec{font-size:.78rem;color:#999;margin-bottom:auto;display:flex;gap:6px;flex-wrap:wrap;height:20px;overflow:hidden}
+.product-card .spec span{background:#F0F2F4;padding:2px 8px;border-radius:4px;height:20px;line-height:16px;white-space:nowrap}
+.product-card .learn{font-size:.78rem;font-weight:600;color:#1A3A4A;display:inline-flex;align-items:center;gap:4px;transition:gap .2s;margin-top:14px;height:18px}
+.product-card:hover .learn{gap:8px}
+.product-card .badge{position:absolute;top:12px;left:12px;background:rgba(26,58,74,.85);color:#fff;font-size:.65rem;font-weight:600;padding:4px 10px;border-radius:4px;letter-spacing:.5px;backdrop-filter:blur(4px);z-index:2}
 
-<script type="application/ld+json">{"name":"Products","@context":"https://schema.org","description":"Professional floor cleaning equipment from BIOCCE manufacturer","manufacturer":"BIOCCE Supply Chain (Shanghai) Co., Ltd.","@type":"Product","brand":{"name":"BIOCCE","@type":"Brand"},"offers":{"priceCurrency":"USD","availability":"https://schema.org/InStock","@type":"Offer"}}</script>
-</head>
-<body>
-<header class="site-header">
-    <div class="header-inner">
-        <a href="/" class="logo"><div class="logo-icon">BC</div><div class="logo-text"><div class="logo-name">BIO<span class="accent">CCE</span></div><div class="logo-sub">Professional Cleaning Equipment</div></div></a>
-        <nav class="nav" id="main-nav">
-            <a href="/">Home</a>
-            <a href="/about.html">About BIOCCE</a>
-            <a href="/products.html">Products</a>
-            <a href="/oem.html">OEM &amp; Customization</a>
-            <a href="/cases.html">Cases &amp; Projects</a>
-            <a href="/certificates.html">Certificates</a>
-            <a href="/faq.html">FAQ</a>
-            <a href="/contact.html">Contact Us</a>
-        </nav>
-        <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-</header>
-<section class="page-header">
-    <div class="container">
-        <h1>Floor <span class="accent">Scrubbers</span></h1>
-        <p>Professional floor scrubbers for every application - Click for full specs</p>
-    </div>
-</section>
-<section class="section" style="padding:48px 0 64px">
-    <div class="container">
-        <div class="prod-grid">
-            <div class="prod-card" onclick="window.location.href='/product-bc500.html'" style="cursor:pointer;text-decoration:none;color:inherit">
-                <div class="prod-img"><img src="/images/product-bc500.jpg" alt="BIOCCE BC500 Walk-Behind Floor Scrubber"></div>
-                <div class="prod-body">
-                    <div class="prod-tag">Walk-Behind</div>
-                    <h3>BC500 Walk-Behind Scrubber</h3>
-                    <div class="pmodel">500mm width | 100Ah Li-ion | 120kg</div>
-                    <div class="pdesc">Compact model for small to medium facilities. 40L solution tank. 3-4h runtime. Low noise. Lightweight.</div>
-                    <div class="btn-row"><a href="/product-bc500.html">View Details</a></div>
-                </div>
-            </div>
-            <div class="prod-card" onclick="window.location.href='/product-bc600.html'" style="cursor:pointer;text-decoration:none;color:inherit">
-                <div class="prod-img" style="color:var(--text-light);font-size:.82rem"><img src="/images/product-bc600.png" alt="BIOCCE BC600 Ride-On Floor Scrubber" style="width:100%;height:100%;object-fit:contain;padding:16px;display:block"></div>
-                <div class="prod-body">
-                    <div class="prod-tag">Ride-On</div>
-                    <h3>BC600 Ride-On Scrubber</h3>
-                    <div class="pmodel">600mm width | 80L dual tank | 280kg</div>
-                    <div class="pdesc">Mid-size ride-on for warehouses and retail. Ergonomic operator seat. Stable scrubbing. Optional Li-ion.</div>
-                    <div class="btn-row"><a href="/product-bc600.html">View Details</a></div>
-                </div>
-            </div>
-            <div class="prod-card" onclick="window.location.href='/product-bc1000.html'" style="cursor:pointer;text-decoration:none;color:inherit">
-                <div class="prod-img" style="color:var(--text-light);font-size:.82rem"><img src="/images/product-bc1000.png" alt="BIOCCE BC1000 Ride-On Floor Scrubber" style="width:100%;height:100%;object-fit:contain;padding:16px;display:block"></div>
-                <div class="prod-body">
-                    <div class="prod-tag">Ride-On</div>
-                    <h3>BC1000 Ride-On Scrubber</h3>
-                    <div class="pmodel">1000mm width | 120L tank | 150Ah Li-ion</div>
-                    <div class="pdesc">Large capacity for industrial use. Dual-brush system. 4-5h runtime. Intelligent flow control.</div>
-                    <div class="btn-row"><a href="/product-bc1000.html">View Details</a></div>
-                </div>
-            </div>
-            <div class="prod-card" onclick="window.location.href='/product-bc1250.html'" style="cursor:pointer;text-decoration:none;color:inherit">
-                <div class="prod-img" style="color:var(--text-light);font-size:.82rem"><img src="/images/product-bc1250.png" alt="BIOCCE BC1250 Heavy-Duty Floor Scrubber" style="width:100%;height:100%;object-fit:contain;padding:16px;display:block"></div>
-                <div class="prod-body">
-                    <div class="prod-tag">Heavy-Duty</div>
-                    <h3>BC1250 Heavy-Duty Scrubber</h3>
-                    <div class="pmodel">1250mm dual-brush | 150L tank | 580kg</div>
-                    <div class="pdesc">For large facilities up to 50,000m2. Permanent magnet motor. Dual 500W brushes. Anti-rollback safety.</div>
-                    <div class="btn-row"><a href="/product-bc1250.html">View Details</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="cta-section">
-    <div class="container">
-        <h2>Need Help Choosing?</h2>
-        <p>Contact our team for expert advice on the right scrubber for your application.</p>
-        <a href="/contact.html" class="btn">Get Expert Advice</a>
-    </div>
-</section>
+.pagination{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:32px;padding-top:24px;border-top:1px solid #ECECEC}
+.page-btn{padding:8px 14px;border:1px solid #D0D0D0;border-radius:6px;background:#fff;color:#666;font-size:.8rem;font-weight:500;cursor:pointer;transition:all .2s;font-family:'Inter',system-ui,sans-serif}
+.page-btn:hover{background:#F5F5F3;border-color:#1A3A4A;color:#1A3A4A}
+.page-btn.active{background:#1A3A4A;border-color:#1A3A4A;color:#fff}
+.page-btn:disabled{opacity:.4;cursor:default}
+.page-btn:disabled:hover{background:#fff;border-color:#D0D0D0;color:#666}
 
-
-
-<section class="section" style="background:var(--bg)">
-    <div class="container">
-        <h2 style="text-align:center;font-size:1.5rem;font-weight:700;margin-bottom:28px">BIOCCE Floor Scrubber Comparison</h2>
-        <div style="overflow-x:auto">
-        <table style="width:100%;border-collapse:collapse;font-size:.85rem;min-width:600px">
-            <thead>
-                <tr style="background:var(--primary);color:#fff">
-                    <th style="padding:14px 16px;text-align:left">Model</th>
-                    <th style="padding:14px 16px;text-align:left">Type</th>
-                    <th style="padding:14px 16px;text-align:left">Cleaning Width</th>
-                    <th style="padding:14px 16px;text-align:left">Tank Capacity</th>
-                    <th style="padding:14px 16px;text-align:left">Battery</th>
-                    <th style="padding:14px 16px;text-align:left">Best For</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="border-bottom:1px solid var(--border)">
-                    <td style="padding:12px 16px;font-weight:600"><a href="/product-bc500.html">BC500</a></td>
-                    <td style="padding:12px 16px">Walk-Behind</td>
-                    <td style="padding:12px 16px">20 in (510 mm)</td>
-                    <td style="padding:12px 16px">12 gal (45 L)</td>
-                    <td style="padding:12px 16px">Lithium / Lead-Acid</td>
-                    <td style="padding:12px 16px">Small facilities, retail, restaurants</td>
-                </tr>
-                <tr style="border-bottom:1px solid var(--border);background:#f8f9fc">
-                    <td style="padding:12px 16px;font-weight:600"><a href="/product-bc600.html">BC600</a></td>
-                    <td style="padding:12px 16px">Ride-On</td>
-                    <td style="padding:12px 16px">28 in (710 mm)</td>
-                    <td style="padding:12px 16px">21 gal (80 L)</td>
-                    <td style="padding:12px 16px">Lithium / Lead-Acid</td>
-                    <td style="padding:12px 16px">Medium warehouses, industrial plants</td>
-                </tr>
-                <tr style="border-bottom:1px solid var(--border)">
-                    <td style="padding:12px 16px;font-weight:600"><a href="/product-bc1000.html">BC1000</a></td>
-                    <td style="padding:12px 16px">Ride-On</td>
-                    <td style="padding:12px 16px">34 in (860 mm)</td>
-                    <td style="padding:12px 16px">32 gal (120 L)</td>
-                    <td style="padding:12px 16px">Lithium</td>
-                    <td style="padding:12px 16px">Large facilities, logistics centers</td>
-                </tr>
-                <tr style="border-bottom:1px solid var(--border);background:#f8f9fc">
-                    <td style="padding:12px 16px;font-weight:600"><a href="/product-bc1250.html">BC1250</a></td>
-                    <td style="padding:12px 16px">Heavy-Duty Ride-On</td>
-                    <td style="padding:12px 16px">36 in (915 mm)</td>
-                    <td style="padding:12px 16px">53 gal (200 L)</td>
-                    <td style="padding:12px 16px">Lithium</td>
-                    <td style="padding:12px 16px">Heavy industrial, large warehouses</td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
+/* ===== 3-Column Capability Section ===== */
+.capabilities{max-width:1280px;margin:0 auto;padding:0 32px 80px}
+.capabilities h2{font-size:1.1rem;font-weight:600;color:#1A3A4A;margin-bottom:28px;padding-bottom:10px;border-bottom:2px solid #1A3A4A;display:inline-block}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cap-card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #ECECEC;transition:all .3s}
+.cap-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.06);border-color:#D0D0D0}
+.cap-card .img-area{aspect-ratio:16/10;overflow:hidden}
+.cap-card .img-area img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.cap-card:hover .img-area img{transform:scale(1.04)}
+.cap-card .cap-body{padding:20px 24px 24px}
+.cap-card .cap-body .cap-icon{width:36px;height:36px;background:linear-gradient(135deg,#1A3A4A,#2D5A6E);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#C9A84C;font-size:.8rem;font-weight:700;margin-bottom:12px}
+.cap-card .cap-body h3{font-size:.95rem;font-weight:600;color:#1A1A1A;margin-bottom:6px}
+.cap-card .cap-body p{font-size:.82rem;color:#666;line-height:1.6}
+.filter-toggle{display:none;align-items:center;gap:8px;padding:10px 20px;background:#fff;border:1px solid #E0E0E0;border-radius:6px;font-size:.85rem;font-weight:500;cursor:pointer;transition:border .2s;color:#444}
+.filter-toggle:hover{border-color:#1A3A4A}
+.filter-overlay{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:99}
+.filter-overlay.open{display:block}
+.filter-sidebar .close-filter{display:none;background:none;border:none;font-size:1.3rem;cursor:pointer;color:#666;margin-bottom:20px;padding:0}
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:32px;padding-top:56px;padding-bottom:56px}
+  .hero-text p{max-width:100%}
+  .page-content{grid-template-columns:1fr;padding-top:32px}
+  .filter-sidebar{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:100;padding:32px;overflow-y:auto}
+  .filter-sidebar.open{display:block}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
+  .filter-toggle{display:inline-flex!important}
+  .cap-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .nav-right{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:#fff;flex-direction:column;justify-content:center;gap:24px;padding:40px;box-shadow:-4px 0 20px rgba(0,0,0,.08);transition:right .3s;z-index:999}
+  .nav-right.open{right:0}
+  .hamburger{display:flex;z-index:1001}
+  .product-grid{grid-template-columns:1fr;gap:20px}
+  .cap-grid{grid-template-columns:1fr}
+  .hero-inner{padding-top:40px;padding-bottom:40px;padding-left:20px;padding-right:20px}
+  .page-content{padding-left:20px;padding-right:20px}
+  .container{padding:0 20px}
+  .nav-inner{padding:0 20px}
+  .capabilities{padding:0 20px 48px}
+}
+@media(max-width:480px){
+  .hero-text h1{font-size:1.6rem}
+}
+@media(max-width:1024px){
+  .filter-sidebar .close-filter{display:block}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">
+      <div class="logo-mark">BC</div>
+      <span class="logo-text">BIOCCE</span>
     </div>
+    <ul class="nav-right" id="navRight">
+      <li><a href="/">Home</a></li>
+      <li><a href="#" class="active">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Insights</a></li>
+      <li><a href="#" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="label">PRODUCT RANGE</p>
+      <h1>All products</h1>
+      <p>Professional floor scrubbers, sweepers, and accessories engineered for industrial performance and worldwide distribution.</p>
+    </div>
+    <div class="hero-image-wrap" id="heroImageWrap"></div>
+  </div>
 </section>
-<footer class="site-footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col"><h4>BIOCCE</h4><p>Professional cleaning equipment manufacturer.<br>Biocce Supply Chain (Shanghai) Co., Ltd.</p><p>Shanghai, China</p><p><a href="mailto:michael@biocce.com">michael@biocce.com</a></p><p>+86 21 5107 8500</p><p><a href="https://wa.me/8618621559605">WhatsApp: +86 18621559605</a></p></div>
-            <div class="footer-col"><h4>Products</h4><a href="/products.html">Walk-Behind Scrubbers</a><a href="/products.html">Ride-On Scrubbers</a><a href="/products.html">Heavy-Duty Scrubbers</a></div>
-            <div class="footer-col"><h4>Company</h4><a href="/about.html">About BIOCCE</a><a href="/oem.html">OEM Services</a><a href="/certificates.html">Certificates</a><a href="/cases.html">Case Studies</a></div>
-            <div class="footer-col"><h4>Quick Links</h4><a href="/faq.html">FAQ</a><a href="/contact.html">Get a Quote</a><a href="mailto:michael@biocce.com">Email Us</a><a href="https://wa.me/8618621559605">WhatsApp</a></div>
-        </div>
-        <div class="footer-bottom"><p>2026 BIOCCE. All rights reserved. | <a href="/privacy.html" style="color:rgba(255,255,255,.45)">Privacy Policy</a></p></div>
-    </div>
-</footer>
-<a href="https://wa.me/8618621559605" target="_blank" style="position:fixed;bottom:24px;right:24px;z-index:999;width:52px;height:52px;background:#25D366;border-radius:50%;box-shadow:0 4px 16px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg></a>
-
-<script>
-(function(){
-  var t=document.querySelector(".nav-toggle"),n=document.getElementById("main-nav");
-  if(t&&n)t.addEventListener("click",function(){n.classList.toggle("open")});
-  var p=window.location.pathname;
-  var a=document.querySelectorAll("#main-nav a");
-  for(var i=0;i<a.length;i++){
-    var h=a[i].getAttribute("href");
-    if(p===h||(h==="/"&&p==="/")||(h!=="/"&&p.indexOf(h)===0)){a[i].classList.add("active");}
-  }
-})();
-</script>
-</body>
+
+<section class="page-content">
+  <aside class="filter-sidebar" id="filterSidebar">
+    <button class="close-filter" id="closeFilter">✕</button>
+    <h3>Filters</h3>
+    <div class="filter-group">
+      <h4>Category</h4>
+      <label><input type="checkbox" value="scrubber" checked onchange="filterProducts()"><span>Floor Scrubber</span><span class="count" id="count-scrubber">0</span></label>
+      <label><input type="checkbox" value="vacuum" checked onchange="filterProducts()"><span>Industrial Vacuum</span><span class="count" id="count-vacuum">0</span></label>
+      <label><input type="checkbox" value="pressure-washer" checked onchange="filterProducts()"><span>Pressure Washer</span><span class="count" id="count-pressure-washer">0</span></label>
+      <label><input type="checkbox" value="wipes" checked onchange="filterProducts()"><span>Industrial Wipes</span><span class="count" id="count-wipes">0</span></label>
+    </div>
+    <div class="filter-group" style="opacity:.5;pointer-events:none">
+      <h4>More Filters</h4>
+      <label><input type="checkbox"><span>Electric</span></label>
+      <label><input type="checkbox"><span>Petrol</span></label>
+    </div>
+    <div class="filter-actions">
+      <button class="btn-clear" onclick="clearFilters()">Clear all filters</button>
+    </div>
+  </aside>
+  <div class="filter-overlay" id="filterOverlay"></div>
+
+  <div>
+    <div class="product-header">
+      <span class="count" id="productCount">4 products</span>
+      <div style="display:flex;gap:12px;align-items:center">
+        <button class="filter-toggle" id="filterToggle">☰ Filters</button>
+        <div class="sort">
+          <label>Sort by</label>
+          <select>
+            <option>Featured</option>
+            <option>Name A-Z</option>
+            <option>Name Z-A</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+    <div id="paginationWrap"></div>
+  </div>
+</section>
+
+<!-- ===== CAPABILITIES: 3-column layout with scene images ===== -->
+<section class="capabilities" id="capSection">
+  <h2>Our Capabilities</h2>
+  <div class="cap-grid" id="capGrid"></div>
+</section>
+
+<script>
+const products = [
+  { id:"BC1250", name:"Ride-On Floor Scrubber BC1250", cat:"scrubber", tag:"RIDE-ON SCRUBBER", spec:["1100mm","255L Tank","6600m²/h"], imgKey:"bc1250", badge:"FLAGSHIP" },
+  { id:"BC1000", name:"Ride-On Floor Scrubber BC1000", cat:"scrubber", tag:"RIDE-ON SCRUBBER", spec:["1000mm","175L Tank","6000m²/h"], imgKey:"bc1000", badge:"LITHIUM" },
+  { id:"BC600", name:"Compact Ride-On Scrubber BC600", cat:"scrubber", tag:"COMPACT RIDE-ON", spec:["560mm","80L Tank","3360m²/h"], imgKey:"bc600", badge:"COMPACT" },
+  { id:"BC500", name:"Walk-Behind Floor Scrubber BC500", cat:"scrubber", tag:"WALK-BEHIND", spec:["500mm","55L Tank","2350m²/h"], imgKey:"bc500", badge:"WALK-BEHIND" },
+  { id:"BC-V1", name:"Industrial Vacuum 100L", cat:"vacuum", tag:"VACUUM CLEANER", spec:["100L","2000W"], imgKey:"", badge:"" },
+  { id:"BC-V2", name:"Industrial Vacuum 50L", cat:"vacuum", tag:"VACUUM CLEANER", spec:["50L","1500W"], imgKey:"", badge:"" },
+  { id:"BC-PW1", name:"Electric Pressure Washer", cat:"pressure-washer", tag:"PRESSURE WASHER", spec:["200bar","2000W"], imgKey:"", badge:"" },
+  { id:"BC-PW2", name:"Petrol Pressure Washer", cat:"pressure-washer", tag:"PRESSURE WASHER", spec:["300bar","7HP"], imgKey:"", badge:"" },
+  { id:"BC-W1", name:"Industrial Wiper Rolls", cat:"wipes", tag:"INDUSTRIAL WIPES", spec:["35x40cm","500 Sheets"], imgKey:"", badge:"" },
+  { id:"BC-W2", name:"Heavy-Duty Wipers", cat:"wipes", tag:"INDUSTRIAL WIPES", spec:["40x50cm","250 Sheets"], imgKey:"", badge:"" }
+];
+
+const PAGE_SIZE = 6;
+let currentPage = 1;
+
+function renderProducts(filtered) {
+  const grid = document.getElementById("productGrid");
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const pageItems = filtered.slice(start, start + PAGE_SIZE);
+
+  grid.innerHTML = pageItems.map(p => {
+    const src = (typeof PRODUCT_IMAGES !== 'undefined' && PRODUCT_IMAGES[p.imgKey]) ? PRODUCT_IMAGES[p.imgKey] : '';
+    return \`<div class="product-card" onclick="location.href='product-\${p.id}.html'">
+      <div class="image-wrap">\${p.badge ? \`<span class="badge">\${p.badge}</span>\` : ''}\${src ? \`<img src="\${src}" alt="\${p.name}" loading="lazy">\` : ''}</div>
+      <div class="info">
+        <div class="tag">\${p.tag}</div>
+        <h3>\${p.name.replace(/\\sBC\\d+$/, '')}</h3>
+        <div class="p-model">\${p.id}</div>
+        <div class="spec">\${p.spec.map(s => \`<span>\${s}</span>\`).join('')}</div>
+        <span class="learn">View Details →</span>
+      </div>
+    </div>\`
+  }).join('');
+
+  document.getElementById("productCount").textContent = filtered.length + ' product' + (filtered.length !== 1 ? 's' : '');
+  renderPagination(filtered.length);
+}
+
+function renderPagination(total) {
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  let html = '<div class="pagination">';
+  html += \`<button class="page-btn" onclick="goPage(\${currentPage - 1})" \${currentPage <= 1 ? 'disabled' : ''}>‹ Prev</button>\`;
+  for (let i = 1; i <= totalPages; i++) {
+    html += \`<button class="page-btn \${i === currentPage ? 'active' : ''}" onclick="goPage(\${i})">\${i}</button>\`;
+  }
+  html += \`<button class="page-btn" onclick="goPage(\${currentPage + 1})" \${currentPage >= totalPages ? 'disabled' : ''}>Next ‹</button>\`;
+  html += '</div>';
+  document.getElementById("paginationWrap").innerHTML = html;
+}
+
+function goPage(page) {
+  const checked = getCheckedFilters();
+  const filtered = checked.length === 0 ? [] : products.filter(p => checked.includes(p.cat));
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  if (page < 1 || page > totalPages) return;
+  currentPage = page;
+  renderProducts(filtered);
+}
+
+function getCheckedFilters() {
+  const checked = [];
+  document.querySelectorAll(".filter-group input[type='checkbox']").forEach(cb => { if(cb.checked && cb.value) checked.push(cb.value); });
+  return checked;
+}
+
+function filterProducts() {
+  currentPage = 1;
+  const checked = getCheckedFilters();
+  renderProducts(checked.length === 0 ? [] : products.filter(p => checked.includes(p.cat)));
+}
+
+function clearFilters() {
+  document.querySelectorAll(".filter-group input[type='checkbox']").forEach(cb => cb.checked = true);
+  filterProducts();
+}
+
+function updateCounts() {
+  const cats = {};
+  products.forEach(p => { cats[p.cat] = (cats[p.cat]||0) + 1 });
+  document.getElementById("count-scrubber").textContent = cats.scrubber || 0;
+  document.getElementById("count-vacuum").textContent = cats.vacuum || 0;
+  document.getElementById("count-pressure-washer").textContent = cats["pressure-washer"] || 0;
+  document.getElementById("count-wipes").textContent = cats.wipes || 0;
+}
+
+function loadCapabilities() {
+  if (typeof SCENE_IMAGES === 'undefined') return;
+  const heroWrap = document.getElementById("heroImageWrap");
+  heroWrap.innerHTML = \`<img src="\${SCENE_IMAGES.gate}" alt="BIOCCE Factory"><div class="overlay-tag">BIOCCE · Factory</div>\`;
+  const caps = [
+    { img: SCENE_IMAGES.scene1, icon: "01", title: "Precision Manufacturing", desc: "State-of-the-art production line in Shanghai, China. Every unit is assembled and tested to the highest standards before shipment." },
+    { img: SCENE_IMAGES.scene2, icon: "02", title: "ISO Certified Workshop", desc: "Our ISO 9001 certified workshop ensures consistent quality across all product lines. Rigorous inspection at every stage." },
+    { img: SCENE_IMAGES.scene3, icon: "03", title: "Global Distribution Network", desc: "Exporting to 50+ countries worldwide with reliable logistics partners. Fast delivery and dedicated after-sales support." }
+  ];
+  const grid = document.getElementById("capGrid");
+  grid.innerHTML = caps.map(c => \`
+    <div class="cap-card">
+      <div class="img-area"><img src="\${c.img}" alt="\${c.title}"></div>
+      <div class="cap-body">
+        <div class="cap-icon">\${c.icon}</div>
+        <h3>\${c.title}</h3>
+        <p>\${c.desc}</p>
+      </div>
+    </div>
+  \`).join('');
+}
+
+document.getElementById('hamburger').addEventListener('click',()=>{ document.getElementById('navRight').classList.toggle('open'); document.getElementById('hamburger').classList.toggle('active'); });
+document.querySelectorAll('.nav-right a').forEach(a=>{ a.addEventListener('click',()=>{ document.getElementById('navRight').classList.remove('open'); document.getElementById('hamburger').classList.remove('active'); }); });
+document.getElementById('filterToggle').addEventListener('click',()=>{ document.getElementById('filterSidebar').classList.add('open'); document.getElementById('filterOverlay').classList.add('open'); });
+document.getElementById('closeFilter').addEventListener('click',()=>{ document.getElementById('filterSidebar').classList.remove('open'); document.getElementById('filterOverlay').classList.remove('open'); });
+document.getElementById('filterOverlay').addEventListener('click',()=>{ document.getElementById('filterSidebar').classList.remove('open'); document.getElementById('filterOverlay').classList.remove('open'); });
+
+updateCounts();
+renderProducts(products);
+loadCapabilities();
+</script>
+</body>
 </html>
