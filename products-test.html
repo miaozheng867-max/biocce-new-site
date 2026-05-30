@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - BIOCCE</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;color:#1A1A1A;background:#FAFAF8;padding:20px}
+h1{font-size:1.5rem;margin-bottom:20px}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px}
+.product-card{background:#fff;border:1px solid #ECECEC;border-radius:10px;padding:16px;cursor:pointer}
+.product-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.product-card .name{font-size:.95rem;font-weight:600;color:#1A1A1A}
+.product-card .model{font-size:.8rem;color:#C9A84C;font-weight:600}
+.pagination{margin-top:20px;display:flex;gap:6px}
+.page-btn{padding:6px 12px;border:1px solid #D0D0D0;border-radius:4px;background:#fff;cursor:pointer}
+.page-btn.active{background:#1A3A4A;color:#fff;border-color:#1A3A4A}
+</style>
+</head>
+<body>
+<h1>All Products</h1>
+<div class="product-grid" id="grid"></div>
+<div class="pagination" id="pagination"></div>
+
+<script>
+var PAGE_SIZE = 6;
+var page = 1;
+
+var products = [
+  {id:"BC1250",name:"Ride-On Floor Scrubber"},
+  {id:"BC1000",name:"Ride-On Floor Scrubber"},
+  {id:"BC600",name:"Compact Ride-On Scrubber"},
+  {id:"BC500",name:"Walk-Behind Floor Scrubber"},
+  {id:"BC-V1",name:"Industrial Vacuum 100L"},
+  {id:"BC-V2",name:"Industrial Vacuum 50L"},
+  {id:"BC-PW1",name:"Electric Pressure Washer"},
+  {id:"BC-PW2",name:"Petrol Pressure Washer"},
+  {id:"BC-W1",name:"Industrial Wiper Rolls"},
+  {id:"BC-W2",name:"Heavy-Duty Wipers"}
+];
+
+function render() {
+  var total = Math.ceil(products.length / PAGE_SIZE);
+  if (page > total) page = total;
+  var start = (page-1)*PAGE_SIZE;
+  var items = products.slice(start, start+PAGE_SIZE);
+  
+  var html = "";
+  for (var i=0; i<items.length; i++) {
+    html += '<div class="product-card">';
+    html += '<div class="name">'+items[i].name+'</div>';
+    html += '<div class="model">'+items[i].id+'</div>';
+    html += '</div>';
+  }
+  document.getElementById("grid").innerHTML = html;
+  
+  var ph = "";
+  ph += '<button class="page-btn" onclick="go('+(page-1)+')" '+(page<=1?'disabled':'')+'>Prev</button>';
+  for (var i=1; i<=total; i++) {
+    ph += '<button class="page-btn'+(i===page?' active':'')+'" onclick="go('+i+')">'+i+'</button>';
+  }
+  ph += '<button class="page-btn" onclick="go('+(page+1)+')" '+(page>=total?'disabled':'')+'>Next</button>';
+  document.getElementById("pagination").innerHTML = ph;
+}
+
+function go(p) {
+  if (p<1 || p>Math.ceil(products.length/PAGE_SIZE)) return;
+  page = p;
+  render();
+}
+
+render();
+</script>
+</body>
+</html>
