@@ -1,2 +1,17 @@
 .vercel
 .env*
+node_modules/
+.wrangler/
+images/node_modules/
+*.bak
+seo-update.ps1
+gen-articles.ps1
+extract_images.py
+fill_bg.py
+extract_scene.js
+fix_dirty_files.py
+analyze_colors.py
+manifest.json
+deploy_manifest.json
+DEPLOY_GUIDE_FOR_XIAOLONGXIA.md
+LEAD_GEN_TOOLS.md
