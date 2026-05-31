@@ -225,3 +225,31 @@ footer .contact li a:hover{color:#fff}
   .hero-text h1{font-size:26px}
   h1{font-size:26px}h2{font-size:22px}h3{font-size:18px}
 }
+
+
+/* 11. Social & Map Section */
+.social-map-section{
+  display:flex;flex-wrap:wrap;gap:24px 48px;
+  padding:32px 24px;max-width:1200px;margin:0 auto;
+  border-top:1px solid #2a2a3a;justify-content:center;
+}
+.social-links{text-align:center}
+.social-links h4,.map-container h4{
+  font-size:12px;font-weight:600;color:#666;
+  letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;
+}
+.social-icons{display:flex;gap:12px;justify-content:center}
+.social-icon{
+  display:flex;align-items:center;justify-content:center;
+  width:40px;height:40px;border-radius:50%;
+  background:#2a2a3a;color:#999;transition:all .2s;
+}
+.social-icon:hover{color:#fff;background:var(--accent);transform:translateY(-2px)}
+.map-container{text-align:center}
+.map-link{
+  display:inline-flex;align-items:center;
+  padding:10px 20px;border-radius:8px;
+  background:#2a2a3a;color:#999;font-size:13px;
+  text-decoration:none;transition:all .2s;
+}
+.map-link:hover{color:#fff;background:var(--accent)}
