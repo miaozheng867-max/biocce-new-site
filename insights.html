@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cleaning Equipment Insights and Guides | BIOCCE</title>
@@ -62,7 +62,7 @@ src="https://www.facebook.com/tr?id=1335346435408082&ev=PageView&noscript=1"
 .article-card:hover .read-more{gap:8px}
 @media(max-width:1024px){.article-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){.article-card .img-area{height:180px}.article-grid{grid-template-columns:1fr}}
-/* 分页 — 与产品列表完全统一 */
+/* 分页 �?与产品列表完全统一 */
 .pages{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:32px;padding-top:24px;border-top:1px solid var(--border)}
 .pg-btn{padding:8px 14px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text-secondary);font-size:14px;font-weight:500;cursor:pointer;font-family:Inter,sans-serif;transition:.2s}
 .pg-btn:hover{background:#f5f5f5;border-color:var(--primary);color:var(--primary)}
@@ -112,6 +112,8 @@ src="https://www.facebook.com/tr?id=1335346435408082&ev=PageView&noscript=1"
 <script>
 var PS = 3, pg = 1;
 var articles = [
+  {title:"Floor Scrubbers for Cold Storage and Freezer Warehouses",date:"May 2026",desc:"Specialized cleaning strategies for cold storage facilities and freezer warehouses. Heated solution systems, lithium-ion battery management, and anti-freeze techniques.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Cold+Storage",link:"/floor-scrubbers-cold-storage-warehouses",cat:"Cold Storage"},
+  {title:"Floor Scrubbers for Automotive Service Centers",date:"May 2026",desc:"Best floor scrubbers for auto service centers and car dealerships. Oil-resistant features, chemical-resistant squeegees, and compact designs for shop bays.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Auto+Service",link:"/floor-scrubbers-auto-service-centers",cat:"Automotive"},
   {title:"Daily Maintenance Tips for Floor Scrubbers",date:"Dec 2026",desc:"Practical daily maintenance tips including brush care, squeegee blade inspection, tank cleaning and battery management to extend equipment life.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Daily+Maintenance",link:"/daily-maintenance-tips-floor-scrubbers",cat:"Floor Scrubbers"},
   {title:"Floor Scrubber Operation Best Practices",date:"Dec 2026",desc:"Essential operation best practices covering battery management, floor type adaptation, chemical dosing and speed control for B2B facility managers.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Operation+Practices",link:"/floor-scrubber-operation-best-practices",cat:"Floor Scrubbers"},
   {title:"Common Floor Scrubber Problems and Fixes",date:"Dec 2026",desc:"Troubleshoot 8 common problems including no water flow, poor pickup, streaking, unusual noises and battery drain with step-by-step fixes.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Troubleshooting",link:"/common-floor-scrubber-problems-fixes",cat:"Maintenance"},
@@ -122,6 +124,7 @@ var articles = [
   {title:"Floor Scrubbers for Food Processing and Pharma",date:"Aug 2026",desc:"Hygienic floor scrubbers for food processing and pharmaceutical facilities. Stainless steel, HEPA filtration.",img:"images/about-factory.jpg",link:"/floor-scrubbers-food-processing-pharma",cat:"Food and Pharma"},
   {title:"The BIOCCE Difference: Factory-Direct",date:"Jun 2026",desc:"How buying directly from the manufacturer gives you better pricing, quality control, and after-sales support.",img:"images/about-factory.jpg",link:"/biocce-factory-direct-difference",cat:"Manufacturing"},
   {title:"Pressure Washer Maintenance Tips",date:"Jun 2026",desc:"Extend the life of your pressure washer with essential maintenance practices to avoid costly repairs.",img:"images/capability-2.jpg",link:"/pressure-washer-maintenance-tips",cat:"Pressure Washers"},
+  {title:"How to Use LinkedIn for B2B Lead Generation in Central Asia",date:"Jun 2026",desc:"Practical strategies for industrial equipment manufacturers to use LinkedIn alongside their website for safe, effective B2B lead generation in Kazakhstan, Uzbekistan and beyond.",img:"images/about-factory.jpg",link:"/linkedin-independent-site-synergy",cat:"Marketing"},
   {title:"How to Choose the Right Floor Scrubber",date:"May 2026",desc:"A practical guide comparing walk-behind and ride-on scrubbers based on facility size and cleaning frequency.",img:"images/product-bc1250.png",link:"/how-to-choose-floor-scrubber",cat:"Floor Scrubbers"},
   {title:"Industrial Vacuum Buyer Guide",date:"May 2026",desc:"Understanding suction power, tank capacity, filter types, and what to look for in industrial vacuum cleaners.",img:"images/capability-1.jpg",link:"/industrial-vacuum-buyers-guide",cat:"Industrial Vacuums"},
   {title:"Commercial Floor Scrubbers for Retail and Hospitality",date:"Sep 2026",desc:"Commercial floor scrubbers for retail stores, hotels, and restaurants. Compact walk-behind scrubbers for daily maintenance.",img:"images/product-bc500.png",link:"/floor-scrubbers-retail-hospitality",cat:"Commercial"},
@@ -159,7 +162,7 @@ function renderArticles(arr){
 function goA(p){
   if (p < 1 || p > Math.ceil(articles.length / PS)) return;
   pg = p;
-  renderArticles(articles);
+  renderArticles(articles);console.log('insights v2');
 }
 
 // Hamburger
@@ -175,7 +178,7 @@ document.getElementById('ham').onclick = function(){
 });
 
 // Init
-renderArticles(articles);
+renderArticles(articles);console.log('insights v2');
 </script>
 </body>
 </html>
