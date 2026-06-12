@@ -1,2 +1,0 @@
-# Redirect apex domain to www (fixes CSS MIME issues on Cloudflare Pages apex)
-https://biocce.com/* https://www.biocce.com/:splat 301
