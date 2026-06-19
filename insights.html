@@ -425,6 +425,7 @@ var PS = 6, pg = 1;
 
 
 var articles = [
+  {title:"How to Choose a Pressure Washer by Industry: Industry-by-Industry Selection Guide for B2B Buyers",date:"June 13, 2026",desc:"Learn how to choose the right pressure washer for your industry. Compare automotive, food processing, construction, agriculture, manufacturing, fleet and hospitality cleaning requirements. Factory-direct from BIOCCE.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Pressure+Washer+by+Industry",link:"/how-to-choose-pressure-washer-by-industry",cat:"Pressure Washers"},
   {title:"Floor Scrubbers for Office Buildings and Commercial Facilities: Complete Guide to Office Floor Maintenance",date:"June 12, 2026",desc:"Complete guide to floor scrubbers for office buildings, commercial facilities and corporate campuses. VCT care, marble maintenance, carpet extraction, tenant satisfaction and cost analysis.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Office+Building+Scrubbers",link:"/floor-scrubbers-office-buildings-commercial-facilities",cat:"Commercial"},
 
   {title:"Floor Scrubbers for Gyms and Fitness Centers: Complete Guide to Gym Floor Maintenance",date:"June 11, 2026",desc:"Complete guide to floor scrubbers for gyms, fitness centers and health clubs. Rubber floor maintenance, sweat stain removal, locker room hygiene, odor control and machine recommendations.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Gym+Floor+Scrubbers",link:"/floor-scrubbers-gyms-fitness-centers",cat:"Commercial"},
@@ -433,6 +434,8 @@ var articles = [
 
 
   {title:"Floor Scrubbers for Airports and Transportation Hubs: Terminals, Hangars, and Transit Stations",date:"June 10, 2026",desc:"Complete guide to floor scrubbers for airports, aircraft hangars, train stations and transit hubs. Find the right machine for terminals, concourses, and maintenance areas.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Airport+Scrubbers",link:"/floor-scrubbers-airports-transportation-hubs",cat:"Transportation"},
+
+  {title:"Airport Floor Cleaning Complete Guide: Terminal Floor Care Solutions",date:"June 19, 2026",desc:"Practical guide to airport floor cleaning: terminal floor care, hangar maintenance, equipment selection, and cost-effective solutions for aviation facilities.",img:"images/airport-terminal.jpg",link:"/airport-floor-cleaning-complete-guide",cat:"Transportation"},
 
 
   {title:"Floor Scrubbers for Manufacturing Plants and Factory Floors: A Complete Guide",date:"June 9, 2026",desc:"Complete guide to choosing floor scrubbers for manufacturing plants and factory floors. Walk-behind vs ride-on, floor surface types, essential features, and cleaning schedules for industrial environments.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Manufacturing+Plants",link:"/floor-scrubbers-manufacturing-plants",cat:"Floor Scrubbers"},
@@ -561,9 +564,13 @@ var articles = [
   {title:"Commercial Floor Scrubbers for Retail and Hospitality",date:"May 31, 2026",desc:"Commercial floor scrubbers for retail stores, hotels, and restaurants. Compact walk-behind scrubbers for daily maintenance.",img:"images/product-bc500.jpg",link:"/floor-scrubbers-retail-hospitality",cat:"Commercial"},
 
 
-  {title:"Heavy-Duty Floor Scrubbers for Automotive Workshops",date:"May 31, 2026",desc:"Heavy-duty floor scrubbers for automotive workshops, service centers and garages handling oil and grease.",img:"images/product-bc1250.jpg",link:"/heavy-duty-scrubbers-automotive-workshops",cat:"Automotive"}
-
-
+  {title:"Heavy-Duty Floor Scrubbers for Automotive Workshops",date:"May 31, 2026",desc:"Heavy-duty floor scrubbers for automotive workshops, service centers and garages handling oil and grease.",img:"images/product-bc1250.jpg",link:"/heavy-duty-scrubbers-automotive-workshops",cat:"Automotive"},
+  {title:"Floor Scrubbers: Answers to the Most Common Questions Buyers Ask",date:"June 5, 2026",desc:"Floor scrubber questions answered - walk-behind vs ride-on, battery vs corded, scrubber vs sweeper, daily maintenance, and what every buyer should know before purchasing.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Scrubber+Questions+Answered",link:"/floor-scrubbers-common-questions-answers",cat:"Floor Scrubbers"},
+  {title:"Floor Scrubbers for Schools and Educational Facilities: Safe, Quiet and Efficient Cleaning",date:"June 4, 2026",desc:"Best floor scrubbers for schools and educational facilities. Low-noise operation, safety features, and cleaning strategies for classrooms, cafeterias, gyms and corridors.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=School+Floor+Scrubbers",link:"floor-scrubbers-schools-educational-facilities",cat:"Floor Scrubbers"},
+  {title:"Floor Scrubbers and Buffers Buying Guide: Complete Selection Guide",date:"June 03, 2026",desc:"Complete buying guide comparing floor scrubbers and buffers. Walk-behind vs ride-on, battery types, TCO analysis, and selection framework for facility managers.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Floor+Scrubber+Buying+Guide",link:"floor-scrubbers-buffers-buying-guide",cat:"Floor Scrubbers"},
+  {title:"The Cost of a Wrong Floor Scrubber: Why $20,000 Can Be Cheaper Than $12,000",date:"June 1, 2026",desc:"Why the cheapest floor scrubber often costs more in the long run. A practical guide to total cost of ownership, hidden costs, and how to avoid expensive mistakes when buying commercial cleaning equipment.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Cost+of+Wrong+Scrubber",link:"/cost-of-wrong-floor-scrubber",cat:"Floor Scrubbers"},
+  {title:"Floor Scrubber Selection by Floor Type: Tile, Epoxy, Concrete and More",date:"June 1, 2026",desc:"How to choose the right floor scrubber based on floor surface type - tile, epoxy, concrete, vinyl, natural stone and rubber. Brush and pad selection for every surface.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=Selection+by+Floor+Type",link:"/floor-scrubber-selection-floor-types",cat:"Floor Scrubbers"},
+  {title:"How a Floor Scrubber Works: Complete Beginner's Guide to Floor Scrubber Technology, Parts and Operation",date:"June 17, 2026",desc:"How does a floor scrubber work? Complete beginner's guide explaining floor scrubber technology, main components, brush types, walk-behind vs ride-on, water system, squeegee action and maintenance basics.",img:"https://placehold.co/600x400/1A3A4A/FAFAF8?text=How+a+Scrubber+Works",link:"/floor-scrubber-how-it-works-beginners-guide",cat:"Floor Scrubbers"},
 ];
 
 
@@ -575,27 +582,21 @@ var articles = [
 
 articles.sort(function(a,b){
 
+  var m={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
 
-  var m={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
-
+  function mn(s){return m[s.toLowerCase().substring(0,3)]||6;}
 
   var da=a.date.split(' '),db=b.date.split(' ');
 
-
   var ya=parseInt(da[2])||parseInt(da[1]), yb=parseInt(db[2])||parseInt(db[1]);
 
+  var ma=mn(da[0]), mb=mn(db[0]);
 
-  var ma=m[da[0]], mb=m[db[0]];
+  var dn=parseInt(da[1].replace(',',''))||1, dbn=parseInt(db[1].replace(',',''))||1;
 
-
-  return (yb*12+mb)-(ya*12+ma);
-
+  return (yb*12+mb)*100+dbn - (ya*12+ma)*100-dn;
 
 });
-
-
-
-
 
 function renderArticles(arr){
 
